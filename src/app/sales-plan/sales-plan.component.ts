@@ -7,23 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalesPlanComponent implements OnInit {
 
-  public functionTypes: any[];
-  public planTypes: any[];
-  public groupOptions: any[];
+  // public functionTypes: any[];
+  // public planTypes: any[];
+  // public groupOptions: any[];
 
-  transit: string;
-  account: string;
+  // transit: string;
+  // account: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.functionTypes = ["functionTypes 1", "functionTypes 2", "functionTypes 3"];
-    this.planTypes = ["planType 1", "planType3 2", "planType 3"];
-    this.groupOptions = ["groupOption 1", "groupOption 2", "groupOption 3"];
+    // this.functionTypes = ["functionTypes 1", "functionTypes 2", "functionTypes 3"];
+    // this.planTypes = ["planType 1", "planType3 2", "planType 3"];
+    // this.groupOptions = ["groupOption 1", "groupOption 2", "groupOption 3"];
   }
 
-  onSubmit(){
-    alert(this)
-  }
 }
 
