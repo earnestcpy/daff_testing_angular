@@ -1,3 +1,95 @@
-<p>
-  sales-plan works!vsusugfsfsif
-</p>
+<div class="row">
+  <div class ="col-2"> Transit</div>
+
+  <div class ="col-2"> 
+    <input type ="text" name= "transit" maxlength="10" size="10" disabled>
+  </div>
+
+  <div class ="col-2"> Account</div>
+
+  <div class ="col-6">
+      <input type ="text" name= "Account" maxlength="20" size="20" disabled>
+  </div>
+
+</div>
+
+<p></p>
+
+<div class="row">
+  <div class = col-2>Function Type</div>
+
+  <div class = col-10>
+    <select disabled> 
+        <option *ngFor="let functionType of functionTypes" value={{functionType}} >
+            {{functionType}}
+        </option>
+  </select>
+  </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class = col-2>Plan Type</div>
+  
+    <div class = col-10>
+      <select disabled> 
+          <option *ngFor="let planType of planTypes" value={{planType}}>
+              {{planType}}
+          </option>
+    </select>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class = col-2>Group Option</div>
+  
+    <div class = col-8>
+      <select> 
+          <option *ngFor="let groupOption of groupOptions" value={{groupOption}}>
+              {{groupOption}}
+          </option>
+    </select>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+  <div class="col-2">Plan Setup Date</div>
+
+  <div class="col-2">
+      <input type ="text" name= "planSetUpDate" maxlength="15" size="15">
+  </div>
+
+  <div class="col-2">Plan Fee Start Date</div>
+
+  <div class="col-2">
+      <input type ="text" name= "planFeeStartDate" maxlength="15" size="15">
+  </div>
+
+  <div class="col-2">Plan Review Date</div>
+  
+  <div class="col-2">
+      <input type ="text" name= "planReviewDate" maxlength="15" size="15">
+  </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-2">Reason for Review</div>
+
+    <div class ="col"> 
+        <input type ="text" name= "reasonForReview" size="60">
+      </div>
+
+</div>
+
+<button (click)="onSubmit()">OK</button>
+
+<button (click)="onClear()">Clear</button>
+
+<button (click)="onCancel()">Cancel</button>
