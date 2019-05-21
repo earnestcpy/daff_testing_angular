@@ -1,3 +1,79 @@
-<p>
-  find-profile works!
+<div class="test"></div>
+<p class="text-center">Welcome to Customer Connect!</p>
+
+<p class="text=left">
+  Customer to insert their chip card and enter PIN to Access Existing Customer
+  Profile OR Enter:
 </p>
+<div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" />Account
+      Number
+    </label>
+
+    <form>
+      <div class="form-group">
+        <label for="transitNo">Transit</label>
+        <input
+          type="email"
+          class="form-control"
+          id="transitNo"
+          placeholder="Transit #"
+        />
+      </div>
+      <div class="form-group">
+        <label for="accountNo">Account</label>
+        <input
+          type="email"
+          class="form-control"
+          id="accountNo"
+          placeholder="Account #"
+        />
+      </div>
+    </form>
+  </div>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" />Other
+      Product Number
+    </label>
+    <form>
+      <div class="form-group">
+        <label for="productSelect">Product</label>
+        <select class="form-control" id="productSelect">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input
+        type="radio"
+        class="form-check-input"
+        name="optradio"
+        disabled
+      />Search by Name
+    </label>
+
+    <form>
+      <div class="form-group">
+        <label for="searchName">Enter Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="searchName"
+          placeholder="Name"
+          disabled
+        />
+      </div>
+    </form>
+  </div>
+</div>
