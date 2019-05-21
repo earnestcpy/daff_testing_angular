@@ -5,3 +5,15 @@
 .form-group.mr-0.mb-2 {
   width: auto;
 }
+
+.form,
+.form-control {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.form-group {
+  margin: 40px;
+  width: 400px;
+  margin-right: 0px;
+}
