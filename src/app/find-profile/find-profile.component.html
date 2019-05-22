@@ -1,80 +1,84 @@
 <div class="test"></div>
-<p class="text-center">Welcome to Customer Connect!</p>
 
-<p class="text=left">
-  Customer to insert their chip card and enter PIN to Access Existing Customer
-  Profile OR Enter:
-</p>
-<div>
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="radio" class="form-check-input" name="optradio" />Account
-      Number
-    </label>
+<p class="text-center h1">Welcome to Customer Connect</p>
 
-    <form>
-      <div class="row">
-        <div class="form-group col-md-auto">
-          <label for="transitNo">Transit</label>
-          <input
-            type="email"
-            class="form-control"
-            id="transitNo"
-            placeholder="Transit #"
-          />
-        </div>
-        <div class="form-group col-6">
-          <label for="accountNo">Account</label>
-          <input
-            type="email"
-            class="form-control"
-            id="accountNo"
-            placeholder="Account #"
-          />
-        </div>
-      </div>
-    </form>
+<div class="row">
+  <div class="col-2">
+    <p class="text-right h5 pt-4">Search By</p>
   </div>
+  <div class="col-md-auto pt-2">
+    <div class="profile-container">
+      <div class="form-check">
+        <label class="form-check-label h5">
+          <input type="radio" class="form-check-input" name="optradio" />Account
+          Number
+        </label>
 
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="radio" class="form-check-input" name="optradio" />Other
-      Product Number
-    </label>
-    <form>
-      <div class="form-group">
-        <label for="productSelect">Product</label>
-        <select class="form-control" id="productSelect">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <form>
+          <div class="row">
+            <div class="form-group col-md-auto">
+              <label for="transitNo">Transit</label>
+              <input
+                type="email"
+                class="form-control"
+                id="transitNo"
+                placeholder="Transit #"
+              />
+            </div>
+            <div class="form-group col-6">
+              <label for="accountNo">Account</label>
+              <input
+                type="email"
+                class="form-control"
+                id="accountNo"
+                placeholder="Account #"
+              />
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
 
-  <div class="form-check">
-    <label class="form-check-label">
-      <input
-        type="radio"
-        class="form-check-input"
-        name="optradio"
-        disabled
-      />Search by Name
-    </label>
-
-    <form>
-      <div class="form-group">
-        <label for="searchName">Enter Name:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="searchName"
-          placeholder="Name"
-        />
+      <div class="form-check">
+        <label class="form-check-label h5">
+          <input type="radio" class="form-check-input" name="optradio" />Other
+          Product Number
+        </label>
+        <form>
+          <div class="form-group">
+            <label for="productSelect">Product</label>
+            <select class="form-control" id="productSelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </form>
       </div>
-    </form>
+
+      <div class="form-check">
+        <label class="form-check-label h5">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="optradio"
+            disabled
+          />Search by Name
+        </label>
+
+        <form>
+          <div class="form-group">
+            <label for="searchName">Enter Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="searchName"
+              placeholder="Name"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
