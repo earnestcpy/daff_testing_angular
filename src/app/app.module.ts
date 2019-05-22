@@ -9,6 +9,7 @@ import { DemoComponent } from './demo/demo.component';
 import { MenuComponent } from './menu/menu.component';
 import { SalesPlanComponent } from './sales-plan/sales-plan.component';
 import { SalesFormComponent } from './sales-form/sales-form.component';
+import { BillComponent } from './bill/bill.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SalesFormComponent } from './sales-form/sales-form.component';
     DemoComponent,
     MenuComponent,
     SalesPlanComponent,
-    SalesFormComponent
+    SalesFormComponent,
+    BillComponent
     
   ],
   imports: [
