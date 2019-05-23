@@ -1,0 +1,92 @@
+<div class="test"></div>
+
+<p class="text-center h1 py-5">Welcome to Customer Connect</p>
+
+<div class="row">
+  <div class="col-2">
+    <p class="text-right h5 pt-4">Search By</p>
+  </div>
+  <div class="col-md-auto pt-2">
+    <div class="home-container">
+      <button
+        type="button"
+        class="btn btn-primary mx-3"
+        (click)="onAccountClick()"
+      >
+        Account
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary mx-3"
+        (click)="onProductClick()"
+      >
+        Product
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary mx-3"
+        (click)="onNameClick()"
+      >
+        Name
+      </button>
+
+      <form *ngIf="accountFlag">
+        <div class="row pt-5">
+          <div class="form-group col-md-auto">
+            <label for="transitNo">Transit</label>
+            <input
+              type="email"
+              class="form-control"
+              id="transitNo"
+              placeholder="Transit #"
+            />
+          </div>
+          <div class="form-group col-6">
+            <label for="accountNo">Account</label>
+            <input
+              type="email"
+              class="form-control"
+              id="accountNo"
+              placeholder="Account #"
+            />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-success mx-3" (click)="onSearch()">
+          Search
+        </button>
+      </form>
+
+      <form *ngIf="productFlag">
+        <div class="form-group pt-5">
+          <label for="productSelect">Product</label>
+          <select class="form-control" id="productSelect">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-success mx-3" (click)="onSearch()">
+          Search
+        </button>
+      </form>
+
+      <form *ngIf="nameFlag">
+        <div class="form-group pt-5">
+          <label for="searchName">Enter Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="searchName"
+            placeholder="Name"
+          />
+        </div>
+        <button type="button" class="btn btn-success mx-3" (click)="onSearch()">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

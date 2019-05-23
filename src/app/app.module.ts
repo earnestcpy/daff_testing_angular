@@ -10,6 +10,7 @@ import { MenuComponent } from "./menu/menu.component";
 import { SalesPlanComponent } from "./sales-plan/sales-plan.component";
 import { SalesFormComponent } from "./sales-form/sales-form.component";
 import { BillComponent } from "./bill/bill.component";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BillComponent } from "./bill/bill.component";
     MenuComponent,
     SalesPlanComponent,
     SalesFormComponent,
-    BillComponent
+    BillComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
